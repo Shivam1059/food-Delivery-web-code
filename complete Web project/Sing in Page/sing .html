@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login-Form</title>
+  <link rel="stylesheet" href="style.css" class="css">
+  <script src="https://kit.fontawesome.com/4ec3457de0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="hero">
+  <div class="form-box">
+    <div class ="button-box">
+      <div id="btn"></div>
+      <button type="button"class="toggle-btn" onclick="login()">Log In</button>
+      <button type="button"class="toggle-btn" onclick="register()">Register</button>
+    </div>
+    <div class="social-icons">
+      <img src="gp.png">
+      <img src="fb.png">
+    </div>
+   <!-- loginsection -->
+   <form id="login" class="input-group">
+     <input type="text" class="input-field" placeholder="User Id" required>
+     <input type="text" class="input-field" placeholder="Passward" required>
+     <input type="checkbox" class="chech-box"><span>Remeber Passward</span>
+     <!-- <button type="submit" class="submit-btn">Log in</button> -->
+     <button onclick="console.log('butten was clicked');alert('Login successfull')" class="submit-btn" >Log in</button> 
+   </form>
+    <!-- ragistration section -->
+   <form id="register" class="input-group">
+    <input type="text" class="input-field" placeholder="Name"
+    required>
+    <input type="email" class="input-field" placeholder="Email Id"
+    required>
+    <input type="text" class="input-field" placeholder="Passward" required>
+    <input type="checkbox" class="chech-box"><span>I agree to be terms and conditions</span>
+    <!-- <button type="submit" class="submit-btn" >register</button> -->
+    <button onclick="console.log('butten was clicked');alert('registration is successfull')" class="submit-btn" >register</button> 
+  </form>
+  </div>
+</div>
+
+
+
+<script>
+  var x = document.getElementById("login");
+  var y = document.getElementById("register");
+  var z = document.getElementById("btn");
+  
+  function register(){
+    x.style.left = "-400px";
+    y.style.left = "50px";
+    z.style.left = "110px";
+  }
+  function login(){
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0";
+  }
+  // function submited(){
+  //   alert('your registration is  successfull!');
+  // }
+
+  // function func(){
+  //   var email = document.getElementById("username").value;
+  //  var pass = document.getElementById("passward").value;
+  //  if(email == 'shivam987@gmail.com' && pass == '12345678'){
+  //   alert("login is success full !")
+  //   window.location.assign("index.html")
+  //   }
+  //  else{
+  //        alert("your login is invalid")
+  //     }
+  // };
+
+  
+</script>
+</body>
+</html>
