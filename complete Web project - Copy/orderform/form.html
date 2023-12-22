@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('food_delivery_image.jpg'); /* Replace 'food_delivery_image.jpg' with the actual image URL */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        #order-form {
+            background: #fff(0, 0, 0, 0.7);
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 50px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #payment-options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        #payment{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color:#17c837;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color:#5c6bc0,#5123bd;
+        }
+        .social-icons{
+             margin: 30px auto;
+             text-align: center;
+             display: flex;
+             background-color: none;
+            }
+        .social-icons img{
+           width: 50%;
+           margin: 0 12px;
+           margin-right: 12px 0;
+           box-shadow: 0 0 40px 0 #7f7f7f3d;
+           cursor: pointer;
+          border-radius: 50%;
+       }
+       #sam{
+        background-color: #e5edea;
+        border: black;
+        font-weight: 500;
+        border-radius: 20px;
+       }
+    </style>
+</head>
+<body>
+
+    <div id="order-form">
+        <marquee id = "sam">Please fill the form carefully.</marquee>
+        <h2> Order Form</h2>
+        
+        <label for="city">Select City:</label>
+        <select id="city" name="city">
+            <option value="city1">Indore</option>
+            <option value="city2">Bhopal</option>
+            <option value="city3">Delih</option>
+            <option value="city3">Mumbai</option>
+            <option value="city3">Jabalpur</option>
+            <option value="city3">Visakhapatnam</option>
+            <option value="city3">Jaypur</option>
+            <option value="city3">Guwahati</option>
+            <option value="city3">Patna</option>
+            <option value="city3">Raipur</option>
+            <option value="city3">Bilaspur</option>
+            <option value="city3">Shimla</option>
+            <option value="city3">Rachi</option>
+            <option value="city2">Mumbai</option>
+            <option value="city3">Bangalore</option>
+           <option value="city4">Chennai</option>
+            <option value="city5">Kolkata</option>
+             <option value="city6">Hyderabad</option>
+             <option value="city7">Pune</option>
+             <option value="city8">Ahmedabad</option>
+          
+            <!-- Add more cities as needed -->
+        </select>
+
+        <label for="product-name">Enter your Home Address</address>:</label>
+        <input type="text" id="product-name" name="product-name" placeholder="Enter Your Home Address ">
+
+        <label for="product-name">Product Name:</label>
+        <input type="text" id="product-name" name="product-name" placeholder="Enter the product name">
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter the quantity" min="1">
+
+        <button onclick="Select ()">Select Your Payment Option</button>
+
+        <!-- <label for="payment-method">Payment Method:</label> -->
+        <div id="payment-options">
+            
+             <div class="social-icons">
+                    <a href="https://paytm.com/" target="_blank">
+                        <img src="paytam.png">
+                    </a>
+                 <a href="https://www.phonepe.com/" target="_blank">
+                    <img src="phone-pe.png">
+                </a>
+                 <a href="https://pay.google.com/about/" target="_blank">
+                    <img src="googlepay.png">
+                </a>
+                 <a href="https://www.paypal.com/in/home" target="_blank">
+                    <img src="paypal.png">
+                </a>
+             
+                 <a href="https://www.bhimupi.org.in/" target="_blank">
+                    <img src="bhim.png">
+                </a>
+             
+             </div> 
+
+        
+    </div>
+    <button  id = "payment" onclick="submitOrder()">Submit  Order</button>
+    <script>
+   
+        function submitOrder() {
+            // Add the logic to handle the order submission here
+            alert('Order booking is  successfully!');
+        }
+    </script>
+
+</body>
+</html>
